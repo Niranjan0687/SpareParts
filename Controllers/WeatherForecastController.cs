@@ -29,5 +29,10 @@ namespace SpareParts.Controllers
             })
             .ToArray();
         }
+        [HttpGet("testapi")]
+        public string  getString()
+        {
+            return "This is a test string";
+        }
     }
 }
