@@ -19,10 +19,10 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore
-        run: dotnet restore ./SpareParts.sln
+        run: dotnet restore ./SpareParts.slnx
 
       - name: Build
-        run: dotnet build ./SpareParts.sln --configuration Release --no-restore
+        run: dotnet build ./SpareParts.slnx --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish ./SpareParts.sln --configuration Release --no-build
+        run: dotnet publish ./SpareParts.slnx --configuration Release --no-build
